@@ -34,7 +34,7 @@ I decided to deliver something that will offer the same if not more functionalit
 
 Let's assume we need to test a class that reads CSV file and provides SUM() of columns. The unit test class would normally look something similar to following:
 
-
+{% highlight php %} 
     class CSVTest extends \PHPUnit_Framework_TestCase {
 
         public function test_sumIsCorrectlyCalculated()
@@ -45,6 +45,7 @@ Let's assume we need to test a class that reads CSV file and provides SUM() of c
             $this->assertEquals(15, $csv->getColumnSum(2), 'Sum of first column is 15');
         }
     }
+{% endhighlight %} 
 
 And the CSV file would look something like:
 
