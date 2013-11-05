@@ -34,7 +34,7 @@ I decided to deliver something that will offer the same if not more functionalit
 
 Let's assume we need to test a class that reads CSV file and provides SUM() of columns. The unit test class would normally look something similar to following:
 
-{% highlight php %}<?php
+{% highlight php linenos %}<?php
     class CSVTest extends \PHPUnit_Framework_TestCase {
 
         public function test_sumIsCorrectlyCalculated()
