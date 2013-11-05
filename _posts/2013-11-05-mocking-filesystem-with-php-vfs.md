@@ -34,7 +34,7 @@ I decided to deliver something that will offer the same if not more functionalit
 
 Let's assume we need to test a class that reads CSV file and provides SUM() of columns. The unit test class would normally look something similar to following:
 
-{% highlight php %} 
+{% highlight php %}<?php
     class CSVTest extends \PHPUnit_Framework_TestCase {
 
         public function test_sumIsCorrectlyCalculated()
@@ -57,7 +57,7 @@ And the CSV file would look something like:
 
 And our CSV class:
 
-
+{% highlight php %}<?php
     class CSV {
 
         protected $data = array();
@@ -86,11 +86,11 @@ And our CSV class:
         }
 
     }
-
+{% endhighlight %}
 
  Let's consider slightly reworked unit test using php-vfs:
 
-
+{% highlight php %}<?php
     use VirtualFileSystem\FileSystem;
 
     class CSVTest extends \PHPUnit_Framework_TestCase {
@@ -114,7 +114,7 @@ And our CSV class:
             $this->assertEquals(15, $csv->getColumnSum(2), 'Sum of first column is 15');
         }
     }
-
+{% endhighlight %}
 
 As you can see the dependency on underlying fs has been removed and the unit test is run in full isolation.
 

@@ -40,7 +40,7 @@ Base from [HTML5 Boilerplate](http://j.mp/rP0wmY)
 No styleguide reference.
 */
 html {
-  font-size: 100%;
+  font-size: 80%;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1482,3 +1482,5 @@ hr {
   *display: inline;
   float: right;
 }
+
+pre { white-space: pre; overflow: auto; }
