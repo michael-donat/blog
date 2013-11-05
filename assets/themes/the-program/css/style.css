@@ -1483,4 +1483,4 @@ hr {
   float: right;
 }
 
-pre { white-space: pre; overflow: auto; }
+pre, code { white-space: pre; overflow: auto; }
