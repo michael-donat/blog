@@ -3,7 +3,7 @@ layout: post
 title: "Mocking filesystem with php-vfs"
 description: "How to mock filesystem while unit testing."
 category: "Testing"
-tags: [mocking filesystem vfs unit testing]
+tags: [mocking,filesystem,vfs,unit,testing]
 ---
 {% include JB/setup %}
 
