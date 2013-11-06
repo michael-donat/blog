@@ -57,7 +57,7 @@ And the CSV file would look something like:
 
 And our CSV class:
 
-{% highlight php %}<?php
+{% highlight php linenos %}<?php
     class CSV {
 
         protected $data = array();
@@ -90,7 +90,7 @@ And our CSV class:
 
  Let's consider slightly reworked unit test using php-vfs:
 
-{% highlight php %}<?php
+{% highlight php linenos %}<?php
     use VirtualFileSystem\FileSystem;
 
     class CSVTest extends \PHPUnit_Framework_TestCase {
