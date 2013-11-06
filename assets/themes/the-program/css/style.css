@@ -1336,6 +1336,3 @@ code {
   overflow: auto;
 }
 
-pre code {
-	word-wrap: break-word; white-space: pre-wrap;
-}
