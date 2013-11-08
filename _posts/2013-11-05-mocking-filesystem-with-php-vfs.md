@@ -141,7 +141,7 @@ class CheckerTest extends PHPUnit_Framework_TestCase {
 
 Pretty good, we've managed to test and prove that our class actually does what we expect it to do. While above works, there are some
 strings attached to that test. The obvious one is that when we run our test during development and it fails, the temporary directory, created
-near the top of our test, will never get removed. Other consideration are file permissions, what if we can't write to ```/tmp``` or what if
+near the top of our test, will never get removed. Other considerations include file permissions, what if we can't write to ```/tmp``` or what if
 we are on Windows and there is no ```/tmp``` at all?
 
 For this exact reason php-vfs was created. We can mock the file system and never have to touch the real deal at all! Here's how it's done:
