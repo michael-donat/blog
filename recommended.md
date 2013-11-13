@@ -23,4 +23,10 @@ list below is a history of such things so I can keep everything in one place, it
 
 - [slim](http://www.slimframework.com) - my favorite 'quick-fix' framework, best solution when I need to mock somethign up quickly.
 
+To investigate:
+
+- [plates](https://github.com/reinink/Plates) - native php templating as an alternative to compiled twig;
+
+- [docker](https://www.docker.io) - vagrant idea taken further by the use of linux containers.
+
 Watch this space for further updates...
