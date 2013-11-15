@@ -176,4 +176,6 @@ and standard low level fs API is working as expected.
 
 php-vfs can be easily integrated into your development code using composer, you can read more about it at [php-vfs github page](http://thornag.github.io/php-vfs);
 
-I'm working at providing it as a PEAR package for system wide installation.
+<del>I'm working at providing it as a PEAR package for system wide installation.</del>
+
+php-vfs has now reached stable v1.0.0 and is available both via [composer](https://packagist.org/packages/php-vfs/php-vfs) and [pear channel](http://pear.michaeldonat.net).
