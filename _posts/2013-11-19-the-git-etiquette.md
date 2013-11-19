@@ -72,7 +72,7 @@ We have a hotfix branch used to fix bug found in production that has been merged
 
 The graph looks something like below
 
-![Repo graph 1]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_1.png)
+![Repo graph 1]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_1.png)
 
 Now, to reflect the fixed bug in the development branch we can rebase the branch to get everything up to date. Let's do it on TEST-1.
 
@@ -81,7 +81,7 @@ git checkout release/TEST-1
 git rebase master
 {% endhighlight %}
 
-![Repo graph 2]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_2.png)
+![Repo graph 2]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_2.png)
 
 Nice, clean, linear. We know exactly what happened and when. All tests are passing. Because we tested after rebasing, we know
 it is absolutely safe to merge. Let's do it (I will also clear the BUG-1 as it's been merged before and it's not needed).
@@ -92,7 +92,7 @@ git branch -D hotfix/BUG-1
 git branch -D feature/TEST-1
 {% endhighlight %}
 
-![Repo graph 3]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_3.png)
+![Repo graph 3]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_3.png)
 
 Again, nice and clear. If we were to rollback to any commit we are now able to say what exactly changed in that commit and if a bug was introduced, ```git bisect```
 is more than happy to help whenever we need it.
@@ -100,7 +100,7 @@ is more than happy to help whenever we need it.
 So, all good, but the TEST-2 feature does not pass through QA. We needed to make further changes, go home in the middle, made few silly commits
 and have created a bit messy history. Something like below...
 
-![Repo graph 4]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_4.png)
+![Repo graph 4]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_4.png)
 
 Typos, work half done, checkpoint commits, all the things that make developer comfortable but are a killer to your clean
 linear master history.
@@ -110,7 +110,7 @@ Oh noes!
 If we were to rebase our branch now, and merge it with fast-forward into master, the resulting tree
 is somewhat ugly, definitely not one where we are confident all changes are stable.
 
-![Repo graph 5]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_5.png)
+![Repo graph 5]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_5.png)
 
 This is definitely <em>not</em> the way to go.
 
@@ -231,7 +231,7 @@ Continue with ```git rebase --continue```
 
 When all is done our history looks a little better
 
-![Repo graph 7]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_7.png)
+![Repo graph 7]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_7.png)
 
 All is left to fix is that unnecessary double commit regarding ```edit_popup.sh```
 
@@ -270,7 +270,7 @@ Save and quit.
 
 What we end up with, is a clear history of our branch work.
 
-![Repo graph 8]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_8.png)
+![Repo graph 8]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_8.png)
 
 There are further choices from here onwards. If your branch was long lived, has plenty of clean commits, each of these
 commits represent a logical state to which you can rollback you can simply integrate it into your master (or develop).
@@ -314,6 +314,6 @@ as it fits better into code review workflow.
 When all work is done, the repo history looks very simple, there's no need to keep it non-linear and it's easy to revert or to branch of
 at specific point.
 
-![Repo graph 9]({{ BASE_PATH }}/assets/posts/git-etiquette/repo_9.png)
+![Repo graph 9]({{ site.JB.BASE_PATH }}/assets/posts/git-etiquette/repo_9.png)
 
 You can remove the now integrated branch feature/TEST-2 and enjoy life, glory and lack of abuse from your co-devs.
