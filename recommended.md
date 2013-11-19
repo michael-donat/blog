@@ -27,6 +27,8 @@ To investigate:
 
 - [plates](https://github.com/reinink/Plates) - native php templating as an alternative to compiled twig;
 
-- [docker](https://www.docker.io) - vagrant idea taken further by the use of linux containers.
+- [docker](https://www.docker.io) - vagrant idea taken further by the use of linux containers;
+
+- [codeception](http://codeception.com) - testing framework that provides support for unit, functional and acceptance testing.
 
 Watch this space for further updates...
