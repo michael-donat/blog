@@ -547,6 +547,7 @@ No styleguide reference.
 --------------------------------------------------------------------------------- */
 html {
   color: #2d2d2d;
+  font-size: 12px;
 }
 #page {
   background: url('/assets/themes/the-program/skin/100-90-5-monochrome.png');
@@ -1190,12 +1191,23 @@ hr {
   *display: inline;
   float: right;
 }
+pre {
+  white-space: pre;
+  word-wrap: normal;
+  padding: 10px;
+}
 pre,
 code {
   white-space: pre;
   overflow: auto;
+  font-size: 0.9em;
+  line-height: 1;
 }
-pre {
-  white-space: pre;
-  word-wrap: normal;
+.unit-article img {
+  display: block;
+  margin: auto;
+}
+.unit-article ul {
+  list-style: square outside none;
+  margin-left: 30px;
 }

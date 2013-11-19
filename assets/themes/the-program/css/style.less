@@ -13,6 +13,7 @@
 --------------------------------------------------------------------------------- */
 html {
 	color: @main-font-color;
+    font-size: 12px;
 }
 
 #page {
@@ -313,6 +314,26 @@ pre {
 @import "_helper.less";
 @import "pygments.css";
 
-pre, code { white-space: pre; overflow: auto; }
+pre {
+  white-space: pre;
+  white-space: pre;
+  word-wrap: normal;
+  padding: 10px;
+}
 
-pre { white-space: pre; white-space: pre; word-wrap: normal; }
+pre, code {
+  white-space: pre;
+  overflow: auto;
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.unit-article img {
+  display: block;
+  margin: auto;
+}
+
+.unit-article ul {
+  list-style: square outside none;
+  margin-left: 30px;
+}

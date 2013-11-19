@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mocking filesystem with php-vfs"
-description: "How to mock filesystem while unit testing."
+description: "How to mock filesystem while unit testing with PHP."
 category: "Testing"
 tags: [mocking,filesystem,vfs,unit,testing]
 ---
