@@ -25,7 +25,7 @@ assume that people able to write tools like git are much 'cleverer' than I will 
 decisions? Same happens here. Fast-forward is one of the most prominent git features, so why, oh why would we want to
  disable it?
 
-Well we don't, we don't because <em>```--no-ff``` breaks bisect blame</em> - as simple as that. The exact reason that prompted you
+Well we don't, we don't because ```--no-ff```<em> breaks bisect blame</em> - as simple as that. The exact reason that prompted you
 to go for ```--no-ff``` for easier history tracking has now robbed you of a way to quickly find bugs with ```git bisect```.
 Surely that isn't what you wanted?
 
