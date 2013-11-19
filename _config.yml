@@ -2,6 +2,9 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
+url: http://thornag.github.io
+baseurl: /blog
+
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
