@@ -50,12 +50,12 @@ Now that we've put it out of the way...
 
 The electric wiring is rather simple, to achieve the on/off functionality you will need to wire one relay out to in of another. The other relay controls the colors.
 
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/wiring_electrics.png)
+![Relay wiring]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/wiring_electrics.png)
 
 You will need 5 pins out of RPi GPIO to control the relay. Two will provide 5v current on the circuit that powers relay switches,
-further 3 to control switches on/off - 2 signal and one ground.
+further three to control switches on/off - two signal and one ground.
 
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/wiring_electronics.png)
+![Electronics wiring]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/wiring_electronics.png)
 
 This is how RPi will make the relay do what we want, if you don't quite understand, don't worry - trust the force.
 
@@ -65,29 +65,30 @@ and easier to assemble.
 
 You should get the idea form below pictures.
 
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
+![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p1.jpg)
+![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p2.jpg)
+![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p3.jpg)
+![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p4.jpg)
+![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p5.jpg)
 
 Software
 
 To make out RPi live crashless we need to use a R/O filesystem to protect the SD storage. There is one brilliant solution out
-there called IPE and develop by the good folk at NutCom(http://nutcom.hu/?page_id=143). I strongly recommend you flash your RPi
+there called IPE and develop by the good folk at [NutCom](http://nutcom.hu/?page_id=143). I strongly recommend you flash your RPi
 with it, it will safe you hassles later and it's really easy to use (switch from r/o to r/w).
 
-Next, connect the Pi and run all the usual setups, get network running, update apt-get and install RPi python module (https://pypi.python.org/pypi/RPi.GPIO).
+Next, connect the Pi and run all the usual setups, get network running, update apt-get and install RPi python module [https://pypi.python.org/pypi/RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO).
 You should be able to either manually do this, use pip/easy_install or even apt-get on that version of IPE. You will need that module
 to make the RPi chip programming a blast. It will save you time and quite potentially the unit from frying too.
 
 
-I'm also using Atlassian Bamboo as my CI so the feed reading in my code is specific to it. The idea is simple though, read the feed,
-if anything failed light the SAD light, otherwise light the HAPPY light. You will need python module pycurl to make that happen so install
-it with apt-get.
+I'm also using Atlassian Bamboo (as well as Jenkins) as my CI so the feed reading in my code is specific to it. The idea is simple though, read the feed,
+if anything failed light the SAD light, otherwise light the HAPPY light. You will need python module pycurl (or jenkinsapi) to make that happen so install
+it with pip/easy_install.
 
 Have a look here to see what I mean, code is very simple and configuration is explained in the README.md
 
-http://github.com/thornag/extreme-feedback-device
+[http://github.com/thornag/extreme-feedback-device](http://github.com/thornag/extreme-feedback-device)
 
 Happy hacking!
 
