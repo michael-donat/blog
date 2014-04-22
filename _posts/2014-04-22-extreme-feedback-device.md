@@ -42,7 +42,7 @@ Next, the Sainsmart relay I mentioned, I used one of these also from Amazon.
 
 Some spare bits like extension lead, jump leads, connector stripes, bulbs etc I will leave to your own creativity.
 
-REMEMBER, THIS PROJECT IS RUNNING ON HIGH VOLTAGE, THIS CAN KILL YOU (NO JOKES) IF YOU DO A COWBOY JOB OUT OF IT!
+<h4 style='color: red;'>REMEMBER, THIS PROJECT IS RUNNING ON HIGH VOLTAGE, THIS CAN KILL YOU IF YOU DO A COWBOY JOB OUT OF IT (NO JOKES)!!!</h4>
 
 Whatever you do with my instructions, you do at your own risk.
 
@@ -66,18 +66,23 @@ and easier to assemble.
 You should get the idea form below pictures.
 
 ![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p1.jpg)
+
 ![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p2.jpg)
+
 ![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p3.jpg)
+
 ![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p4.jpg)
+
 ![RPi XFD]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/p5.jpg)
+
 
 Software
 
 To make out RPi live crashless we need to use a R/O filesystem to protect the SD storage. There is one brilliant solution out
-there called IPE and develop by the good folk at [NutCom](http://nutcom.hu/?page_id=143). I strongly recommend you flash your RPi
+there called IPE and develop by the good folk at [NutCom](http://nutcom.hu/?page_id=143){:target="_blank"}. I strongly recommend you flash your RPi
 with it, it will safe you hassles later and it's really easy to use (switch from r/o to r/w).
 
-Next, connect the Pi and run all the usual setups, get network running, update apt-get and install RPi python module [https://pypi.python.org/pypi/RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO).
+Next, connect the Pi and run all the usual setups, get network running, update apt-get and install RPi python module [https://pypi.python.org/pypi/RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO){:target="_blank"}.
 You should be able to either manually do this, use pip/easy_install or even apt-get on that version of IPE. You will need that module
 to make the RPi chip programming a blast. It will save you time and quite potentially the unit from frying too.
 
@@ -88,7 +93,7 @@ it with pip/easy_install.
 
 Have a look here to see what I mean, code is very simple and configuration is explained in the README.md
 
-[http://github.com/thornag/extreme-feedback-device](http://github.com/thornag/extreme-feedback-device)
+[http://github.com/thornag/extreme-feedback-device](http://github.com/thornag/extreme-feedback-device){:target="_blank"}
 
 Happy hacking!
 
