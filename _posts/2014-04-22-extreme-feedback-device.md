@@ -97,6 +97,12 @@ Have a look here to see what I mean, code is very simple and configuration is ex
 
 Happy hacking!
 
+Edit:
+
+Small watch-it-in-action
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/jqmdll4Odvk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+
 
 
 
