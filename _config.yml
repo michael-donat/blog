@@ -12,7 +12,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Blog - Michael Donat
-tagline: journey through my experiences a web engineer
+tagline: journey through my experiences as a web engineer
 author :
   name : Michael Donat
   email : michael.donat@me.com

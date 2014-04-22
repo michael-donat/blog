@@ -36,9 +36,9 @@ I opted for enabling it only within given times as there was no reason for the u
 Let's start with the hardware.
 
 You obviously need a Raspberry Pi. I bought mine from Amazon as a starter kit with case, power supply and SD card for about £35.
-Next, the sainsmart relay I mentioned, I used one of these also from Amazon.
+Next, the Sainsmart relay I mentioned, I used one of these also from Amazon.
 
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
+![Relay]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
 
 Some spare bits like extension lead, jump leads, connector stripes, bulbs etc I will leave to your own creativity.
 
@@ -48,14 +48,14 @@ Whatever you do with my instructions, you do at your own risk.
 
 Now that we've put it out of the way...
 
-You will need 5 pins out of RPi GPIO to control the relay. 2 provide 5v current on the circuit that powers relay switches,
-3 to control switches on/off - 2 signal and one ground.
+The electric wiring is rather simple, to achieve the on/off functionality you will need to wire one relay out to in of another. The other relay controls the colors.
 
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
+![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/wiring_electrics.png)
 
-And to make it more obvious
+You will need 5 pins out of RPi GPIO to control the relay. Two will provide 5v current on the circuit that powers relay switches,
+further 3 to control switches on/off - 2 signal and one ground.
 
-![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/relay.png)
+![Relay chart]({{ site.JB.BASE_PATH }}/assets/posts/extreme-feedback-device/wiring_electronics.png)
 
 This is how RPi will make the relay do what we want, if you don't quite understand, don't worry - trust the force.
 
@@ -73,7 +73,7 @@ You should get the idea form below pictures.
 Software
 
 To make out RPi live crashless we need to use a R/O filesystem to protect the SD storage. There is one brilliant solution out
-there called IPE and develop by the brilliant folk at NutCom(http://nutcom.hu/?page_id=143). I strongly recommend you flash your RPi
+there called IPE and develop by the good folk at NutCom(http://nutcom.hu/?page_id=143). I strongly recommend you flash your RPi
 with it, it will safe you hassles later and it's really easy to use (switch from r/o to r/w).
 
 Next, connect the Pi and run all the usual setups, get network running, update apt-get and install RPi python module (https://pypi.python.org/pypi/RPi.GPIO).
