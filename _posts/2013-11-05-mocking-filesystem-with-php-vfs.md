@@ -174,7 +174,7 @@ As you can see the dependency on underlying fs has been removed and the unit tes
 have to worry about cleaning, permissions or whether the ```/tmp``` directory is there at all. Everything is kept in memory
 and standard low level fs API is working as expected.
 
-php-vfs can be easily integrated into your development code using composer, you can read more about it at [php-vfs github page](http://thornag.github.io/php-vfs);
+php-vfs can be easily integrated into your development code using composer, you can read more about it at [php-vfs github page](http://michael-donat.github.io/php-vfs);
 
 <del>I'm working at providing it as a PEAR package for system wide installation.</del>
 

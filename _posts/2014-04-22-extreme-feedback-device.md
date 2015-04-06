@@ -92,7 +92,7 @@ if anything failed light the SAD light, otherwise light the HAPPY light.
 
 Have a look here to see what I mean, code is very simple and configuration is explained in the README.md
 
-[http://github.com/thornag/extreme-feedback-device](http://github.com/thornag/extreme-feedback-device){:target="_blank"}
+[http://github.com/michael-donat/extreme-feedback-device](http://github.com/michael-donat/extreme-feedback-device){:target="_blank"}
 
 Happy hacking!
 
