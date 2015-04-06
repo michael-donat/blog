@@ -6,7 +6,7 @@ url: http://michael-donat.github.io
 baseurl: /blog
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
+highlighter: pygments
 
 markdown: kramdown
 
@@ -18,7 +18,7 @@ tagline: journey through my experiences as a web engineer
 author :
   name : Michael Donat
   email : michael.donat@me.com
-  github : thornag
+  github : michael-donat
   linkedin: linkedin.com/in/donatmichael
   projects: michael-donat.github.io
 
@@ -59,7 +59,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : http://thornag.github.io/blog
+  BASE_PATH : http://michael-donat.github.io/blog
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
